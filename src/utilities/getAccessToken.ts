@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 async function getAccessToken(request: any): Promise<string> {
-  const CLIENT_ID = 'xxxxx';
-  const CLIENT_SECRET = 'xxxx';
+    const CLIENT_ID = 'xxxx';
+    const CLIENT_SECRET = 'xxxxx';
 
   const response = await request.post('https://accounts.spotify.com/api/token', {
     headers: {
